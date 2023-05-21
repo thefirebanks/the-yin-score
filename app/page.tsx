@@ -9,7 +9,6 @@ const HomePage: React.FC = () => {
         <meta name="description" content="Your home page description" />
       </Head>
       <NetworkVisualization />
-      {/* Other content */}
     </div>
   );
 };

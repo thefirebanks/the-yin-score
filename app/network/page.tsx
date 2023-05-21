@@ -90,11 +90,11 @@ const NetworkVisualization: React.FC = () => {
   };
 
   return (
-    <div className="bg-slate-800 h-screen flex flex-col items-center justify-center">
+    <div className="bg-slate-800 flex flex-col items-center justify-center">
       <h1 className="text-2xl font-bold mb-4 text-black bg-slate-400 rounded-md">
         The Yin-Network
       </h1>
-      <div className="bg-black w-500 h-500" ref={networkRef}></div>
+      <div className="bg-black w-96 h-96" ref={networkRef}></div>
       <div className="flex flex-col items-center mt-4">
         <input
           type="text"
