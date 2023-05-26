@@ -1,4 +1,12 @@
-*node_modules/
+# Next.js
+.next/
+out/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
