@@ -10,8 +10,15 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
+model Node {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   name String?
   email String? @unique
+  edgeIds String[] @db.ObjectId
+}
+
+model Edge {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  sourceNodeId String @db.ObjectId
+  targetNodeId String @db.ObjectId
 }
